@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEIT CALCULATORS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <h2 class="head">  بِسمِ اللہِ الرَّحمٰنِ الرَّحِيم <BR><br> CODEIT CALCULATORS <BR><br> VERSION: SIMPLE</h2>
+        <div id="calculator">
+            <div id="output">
+                <input class="out" id="result" type="text">
+            </div>
+            <div id="keyboard">
+                <div class="cl" style="width: auto;">
+                    <button class="operator" id="clearbtn" onclick="clearresult()" style="background-color: rgb(199, 144, 93);">C</button>
+                </div>
+                <div class="btns">
+                    <div>
+                    <button class="number" id="7" onclick="getnumber('7')">7</button>
+                    <button class="number" id="8"onclick="getnumber('8')">8</button>
+                    <button class="number" id="9"  onclick="getnumber('9')">9</button>
+                    <button class="operator" id="*"  onclick="getnumber('*')">*</button>
+                    </div>
+                    <div>
+                    <button class="number" id="4"  onclick="getnumber('4')">4</button>
+                    <button class="number" id="5" onclick="getnumber('5')">5</button>
+                    <button class="number" id="6" onclick="getnumber('6')">6</button>
+                    <button class="operator" id="-" onclick="getnumber('-')">-</button>
+                    </div>
+                    <div>
+                    <button class="number" id="1" onclick="getnumber('1')">1</button>
+                    <button class="number" id="2" onclick="getnumber('2')">2</button>
+                    <button class="number" id="3" onclick="getnumber('3')">3</button>
+                    <button class="operator" id="+" onclick="getnumber('+')">+</button>
+                    </div>
+                    <div>
+                    <button  id="halfbtn"  onclick="getnumber('0')" style="width: 155px; background-color: #238fd6;">0</button>
+                    <button  id="halfbtn"  onclick="getresult()" style="background-color: rgb(83, 71, 245);width: 155px;">=</button>
+                    </div>
+                </div>
+
+            </div>
+         
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
